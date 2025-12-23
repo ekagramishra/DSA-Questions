@@ -1,3 +1,4 @@
+// For the first time i got to know how the range affects a code
 class Solution {
     public int reverse(int x) {
         int n=x ; //creating a copy
@@ -5,7 +6,7 @@ class Solution {
         if(n>0){
         while(n>0){
             int d=n%10;
-            if (rev > Integer.MAX_VALUE / 10 || (rev == Integer.MAX_VALUE / 10 && d > 7)){
+            if (rev > Integer.MAX_VALUE / 10 || (rev == Integer.MAX_VALUE / 10 && d > 7)){ //the new thing i got to learn was why this d is here, i had to search for it.
             return 0;
             }
             if (rev < Integer.MIN_VALUE / 10 || (rev == Integer.MIN_VALUE / 10 && d < -8)){
