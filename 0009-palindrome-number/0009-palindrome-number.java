@@ -6,6 +6,8 @@ class Solution {
         if(n<0){
             return false;
         }
+        // keeping it above made a greater impact
+
         if(x==0){ //the test case i could not figure out
             return true;
         }
@@ -14,13 +16,6 @@ class Solution {
         }
         while(n>0){
             int d=n%10;
-            //checking whether the number lies in the range or not
-            if (rev > Integer.MAX_VALUE / 10 || (rev == Integer.MAX_VALUE / 10 && d > 7)){
-            return false;
-            }
-            if (rev < Integer.MIN_VALUE / 10 || (rev == Integer.MIN_VALUE / 10 && d < -8)){
-            return false;
-            }
             rev= rev*10+d;
             n=n/10;
         }
