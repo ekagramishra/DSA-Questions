@@ -1,25 +1,15 @@
 class Solution { 
     public void reverseString(char[] s) {
-        int left = 0;
-        int right = s.length - 1;
+        int l= 0;
+        int r= s.length-1;
 
-        while (left < right) {
-            char temp = s[left];
-            s[left] = s[right];
-            s[right] = temp;
-
-            left++;
-            right--;
+        while(l<r){
+            char temp = s[l];
+            s[l]= s[r];
+            s[r]= temp;
+            l++;
+            r--;
         }
 
-        // printing in required format
-        System.out.print("[ ");
-        for (int i = 0; i < s.length; i++) {
-            System.out.print("\"" + s[i] + "\"");
-            if (i != s.length - 1) {
-                System.out.print(" , ");
-            }
-        }
-        System.out.print(" ]");
     }
 }
