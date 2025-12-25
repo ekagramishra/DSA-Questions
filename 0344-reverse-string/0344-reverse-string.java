@@ -11,12 +11,5 @@ class Solution {
             r--;
         }
 
-        System.out.print("[");
-
-        for(int i=0;i<s.length;i++){
-            System.out.print("\""+s[i]+"\"");
-        }
-
-        System.out.print("]");
     }
 }
