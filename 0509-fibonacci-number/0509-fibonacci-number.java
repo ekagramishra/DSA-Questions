@@ -7,7 +7,9 @@ class Solution {
             return 1;
         }
         else{
-            return fib(n-1) + fib(n-2) ;
+            int x=fib(n-1);
+            int y=fib(n-2);
+            return (x+y) ;
         }
     }
 }
