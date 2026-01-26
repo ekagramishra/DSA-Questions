@@ -6,10 +6,6 @@ class Solution {
         if(n==1){
             return 1;
         }
-        else{
-            int x=fib(n-1);
-            int y=fib(n-2);
-            return (x+y) ;
-        }
+        return fib(n-1)+fib(n-2) ;
     }
 }
