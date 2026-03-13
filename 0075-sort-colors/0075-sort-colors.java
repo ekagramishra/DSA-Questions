@@ -1,3 +1,5 @@
+//this is a code of selection sort for now
+
 class Solution {
     public void sortColors(int[] nums) {
         for(int i=0;i<=nums.length-1;i++){
@@ -11,3 +13,6 @@ class Solution {
         }
     }
 }
+
+
+// the most optimized approach would be insertion sort
